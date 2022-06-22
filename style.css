@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&display=swap');
+@import url("https://use.typekit.net/sxh3ydu.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark: #272a31;
+  --color-coral: #ec5242;
+  --text-coral: #f44c06;
+  --color-white: #fff;
+  --bg-gray: #d3d3d3;
+  --text-gray: #909090;
+  --text-darkgray: #565656;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--color-white);
+}
+
+.hamburger {
+  height: 100%;
+  display: none;
+  width: 50%;
+}
+
+header .main-nav {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav .nav-logo {
+  width: calc((100% / 2) - 30%);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-closebtn {
+  display: none;
+}
+
+/* .nav-link {
+  display: flex;
+  justify-content: flex-end;
+  width: calc((100% / 2) + 10%);
+  align-items: center;
+} */
+
+.nav-link {
+  align-items: center;
+  width: calc((100% / 2) + 30%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link li {
+  display: inline-block;
+  padding: 8px;
+}
+
+.nav-link .liste {
+  color: var(--text-coral);
+  border: 1px solid orange;
+  padding: 4px;
+}
+
+.nav-link li a {
+  color: var(--text-gray);
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-top {
+  width: 100%;
+  min-height: 90vh;
+  background-color: purple;
+  background-image: url('/asset/preparation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.message-top {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.message {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px 0;
+}
+
+.message h3 {
+  font-size: 2em;
+  text-transform: capitalize;
+  color: #fa5816;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 100;
+}
+
+.message h1 {
+  font-size: 4em;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  color: #fa5816;
+  line-height: 1;
+}
+
+.fit {
+  font-size: 14px;
+  padding: 10px;
+  width: 60%;
+  border-style: solid;
+  border-color: var(--color-white);
+  font-family: "Lato", sans-serif;
+}
+
+.message .date {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  font-size: 1.5em;
+  margin-top: 5px;
+}
+
+.message p span {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 200;
+  font-size: 0.7em;
+}
+
+.main-bottom {
+  /* width: 100%;
+  height: 70vh;
+  padding: 50px 20px;
+  background-color: #272a33; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 50px 200px;
+  color: var(--color-white);
+  background: var(--color-dark);
+}
+
+.section-title {
+  text-align: center;
+  justify-content: center;
+  color: var(--color-white);
+  padding: 50px;
+  padding-bottom: 10px;
+}
+
+.main-bottom-in {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1px;
+  padding: 2%;
+  background: #3c3f46;
+  border: 2px solid #3c3f46;
+}
+
+h2.title {
+  width: 35%;
+  text-align: center;
+  padding: 5px;
+  color: var(--color-coral);
+}
+
+.pro {
+  color: var(--color-white);
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.card h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.promore {
+  display: block;
+  color: var(--color-white);
+  text-align: center;
+  margin: 50px;
+  text-decoration: underline;
+}
+
+.promore:hover {
+  color: var(--color-coral);
+}
+
+.probtn {
+  display: none;
+}
+
+.card p {
+  text-align: center;
+  width: 100%;
+}
+
+.partners {
+  background-color: var(--text-darkgray);
+  padding: 10px;
+}
+
+.partnerhead {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 40px;
+}
+
+.partner-logo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.partner-logo img {
+  width: 10%;
+  height: 30%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px 20px;
+    color: var(--color-white);
+    background: var(--color-dark);
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-link {
+    background: var(--color-dark);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    transition: 0.5s ease-in;
+  }
+
+  .nav-link.active {
+    left: 0;
+  }
+
+  .nav-link li a {
+    font-size: 2em;
+    color: var(--color-white);
+  }
+
+  .menu-closebtn {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    flex-direction: row-reverse;
+    font-size: 2em;
+  }
+
+  .main-bottom-in {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message-top {
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .message {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  .message h3 {
+    font-size: 2em;
+    text-transform: capitalize;
+    color: #fa5816;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 100;
+  }
+
+  .message h1 {
+    width: 100%;
+    font-size: 3em;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    color: #fa5816;
+    line-height: 1;
+  }
+
+  .fit {
+    font-size: 1.2em;
+    padding: 10px 0;
+    width: 100%;
+    border-style: solid;
+    margin-top: 10px;
+    border-color: var(--color-white);
+  }
+
+  .message .date {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    padding: 5px;
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+
+  .message p span {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 200;
+    padding: 5px;
+    font-size: 0.7em;
+  }
+}
