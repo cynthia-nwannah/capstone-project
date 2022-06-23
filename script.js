@@ -12,7 +12,6 @@ times.addEventListener('click', () => {
   nav.classList.remove('active');
 });
 
-
 const speakers = [
   {
     name: 'Cameron Falloon',
