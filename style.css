@@ -108,7 +108,7 @@ main .main-top {
 
 .background {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -116,13 +116,14 @@ main .main-top {
   height: 100%;
   width: 80%;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
 .message {
-  width: 100%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 50px auto;
   height: auto;
   padding: 10px 0;
 }
@@ -145,11 +146,10 @@ main .main-top {
 
 .fit {
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   width: 60%;
   border-style: solid;
   border-color: var(--color-white);
-  font-family: "Lato", sans-serif;
 }
 
 .message .date {
@@ -235,6 +235,10 @@ h2.title {
   text-decoration: underline;
 }
 
+.speakerhead {
+  color: black;
+}
+
 .promore:hover {
   color: var(--color-coral);
 }
@@ -243,9 +247,96 @@ h2.title {
   display: none;
 }
 
+.grid {
+  padding: 20px;
+  display: grid;
+  height: 80vh;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+}
+
+.parent {
+  height: 95%;
+  display: flex;
+  width: 100%;
+  margin-right: 10px;
+}
+
+#developer-info {
+  display: flex;
+  padding: 5px;
+  width: 80%;
+  margin: 5px;
+  flex-direction: column;
+}
+
+.image-con {
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+
+.image-con .dev-bg-tiles {
+  width: 50%;
+  height: 80%;
+}
+
+.developer-followers {
+  color: red;
+  font-style: italic;
+}
+
+.image-con .developer-image {
+  position: absolute;
+  left: 30px;
+  width: 60%;
+  height: 70%;
+  bottom: 10px;
+}
+
+.image-con img {
+  width: 40%;
+  height: 50%;
+}
+
 .card p {
   text-align: center;
   width: 100%;
+}
+
+footer#join {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  font-family: acumin-pro, sans-serif;
+}
+
+.partner-logo img {
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#join img {
+  width: 10%;
+  height: 100%;
+}
+
+.footer-rights {
+  display: flex;
+  color: black;
+  text-transform: capitalize;
+  word-spacing: 4px;
+  font-size: 1.5em;
+  font-style: italic;
+  align-items: center;
 }
 
 .partners {
@@ -253,25 +344,18 @@ h2.title {
   padding: 10px;
 }
 
-.partnerhead {
-  text-align: center;
+h2.partnerhead {
+  padding: 10px;
   color: var(--text-gray);
-  font-size: 40px;
+  font-size: 3em;
 }
 
 .partner-logo {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   justify-content: space-between;
-}
-
-.partner-logo img {
-  width: 10%;
-  height: 30%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -281,6 +365,7 @@ h2.title {
     align-items: center;
     justify-content: space-between;
     height: auto;
+    margin-top: 100px;
     padding: 20px 20px;
     color: var(--color-white);
     background: var(--color-dark);
@@ -295,10 +380,6 @@ h2.title {
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 
   .nav-link {
@@ -337,12 +418,56 @@ h2.title {
     flex-direction: column;
   }
 
+  .footer-rights {
+    display: flex;
+    color: black;
+    text-transform: capitalize;
+    word-spacing: 4px;
+    font-size: 0.8em;
+    font-style: italic;
+    align-items: center;
+  }
+
+  .grid {
+    padding: 20px;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  #developer-info {
+    display: flex;
+    width: 80%;
+    margin: 0;
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .promore {
+    font-size: 14px;
+  }
+
+  .parent {
+    display: flex;
+    width: 100%;
+  }
+
   .message-top {
     height: auto;
     width: 90%;
     display: flex;
     align-items: center;
     margin: 0 auto;
+  }
+
+  .image-con .developer-image {
+    position: absolute;
+    left: 10px;
+    width: 60%;
+    height: 60%;
+    bottom: 10px;
   }
 
   .message {
@@ -383,7 +508,7 @@ h2.title {
     font-weight: 800;
     line-height: 1;
     padding: 5px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 40px;
   }
 
@@ -392,5 +517,39 @@ h2.title {
     font-weight: 200;
     padding: 5px;
     font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .image-con {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+  }
+
+  .image-con .dev-bg-tiles {
+    width: 100%;
+    height: 70%;
+  }
+
+  .image-con .developer-image {
+    position: absolute;
+    left: 10px;
+    width: 80%;
+    height: 50%;
+    bottom: 20px;
+  }
+
+  .message h3 {
+    font-size: 1.4em;
+  }
+
+  .message h1 {
+    font-size: 2em;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    color: #fa5816;
+    line-height: 1;
   }
 }
