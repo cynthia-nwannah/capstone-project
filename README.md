@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Ishpaul Singh**
+👤 **Nwannah Cynthia**
 
 - Github - [@cynthia-nwannah](https://github.com/cynthia-nwannah)
 - Twitter - [@cynthia-nwannah](https://twitter.com/CynthiaNwannah)
