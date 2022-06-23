@@ -16,7 +16,7 @@ and name used is for the purpose of Placeholding. Website layout and design belo
 - JavaScript
 
 ## Live Demo
-Here is how it looks [live](https://ishpaul777.github.io/Landing-page-for-Dev-summit/).
+Here is how it looks [live](https://cynthia-nwannah.github.io/capstone-project/).
 
 ## Loom Video
 I have presented the project in a [Loom Video](https://www.loom.com/share/721a171dca5249509f6ba105630a5a3b).
