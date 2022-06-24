@@ -73,6 +73,10 @@ header .main-nav {
   display: flex;
 }
 
+#title {
+  border: 1px solid white;
+}
+
 nav .nav-logo {
   width: calc((100% / 2) - 30%);
   height: 100%;
@@ -306,7 +310,8 @@ h2.title {
 
 .image-con .dev-bg-tiles {
   width: 50%;
-  height: 80%;
+  background-color: red;
+  height: 60%;
 }
 
 .developer-followers {
@@ -344,12 +349,9 @@ footer#join {
   font-family: acumin-pro, sans-serif;
 }
 
-.partner-logo img {
+.partners-logo img {
   width: 20%;
   height: 20%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 #join img {
@@ -367,23 +369,29 @@ footer#join {
   align-items: center;
 }
 
-.partners {
-  background-color: var(--text-darkgray);
-  padding: 10px;
-}
-
 h2.partnerhead {
   padding: 10px;
   color: var(--text-gray);
   font-size: 3em;
 }
 
-.partner-logo {
+.partners {
+  background-color: #414246;
+  color: white;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 3%;
+}
+
+.partners .partners-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   flex-direction: row;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -407,6 +415,11 @@ h2.partnerhead {
     align-items: center;
     font-size: 2.5em;
     cursor: pointer;
+  }
+
+  .partners-logo img {
+    width: 30%;
+    height: 20%;
   }
 
   .nav-link {
